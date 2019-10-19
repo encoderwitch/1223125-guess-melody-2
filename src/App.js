@@ -13,8 +13,14 @@ const App = (props) => {
   );
 };
 
-App.prototype = {
+App.defaultProps = {
+  gameTime: 0,
+  errorCount: 0,
+};
+
+App.propTypes = {
   gameTime: PropTypes.number,
   errorCount: PropTypes.number,
 };
+
 export default App;

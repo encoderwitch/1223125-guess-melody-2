@@ -17,7 +17,12 @@ const OpenScreen = (props) => {
   );
 };
 
-OpenScreen.PropTypes = {
+OpenScreen.defaultProps = {
+  time: 0,
+  errorCount: 0,
+};
+
+OpenScreen.propTypes = {
   time: PropTypes.number,
   errorCount: PropTypes.number,
 };
