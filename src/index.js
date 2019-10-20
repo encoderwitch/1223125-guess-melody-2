@@ -4,10 +4,10 @@ import App from './App';
 
 const init = () => {
   const data = {
-    gameTime: 15,
-    errorCount: 5,
+    gameTime: 7,
+    errorCount: 4,
   };
-  ReactDOM.render(<App gameTime={data.gameTime} errorCount={data.errorCount}/>, document.getElementById(`root`));
+  ReactDOM.render(<App gameTimeApp={data.gameTime} errorCountApp={data.errorCount}/>, document.getElementById(`root`));
 };
 
 init();

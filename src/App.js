@@ -3,24 +3,24 @@ import OpenScreen from './components/OpenScreen';
 import PropTypes from 'prop-types';
 
 const App = (props) => {
-  const {gameTime, errorCount} = props;
+  const {gameTimeApp, errorCountApp} = props;
 
   return (
     <OpenScreen
-      time = {gameTime}
-      errorCount = {errorCount}
+      time = {gameTimeApp}
+      errorCount = {errorCountApp}
     />
   );
 };
 
 App.defaultProps = {
-  gameTime: 0,
-  errorCount: 0,
+  gameTimeApp: 0,
+  errorCountApp: 0,
 };
 
 App.propTypes = {
-  gameTime: PropTypes.number,
-  errorCount: PropTypes.number,
+  gameTimeApp: PropTypes.number,
+  errorCountApp: PropTypes.number,
 };
 
 export default App;
