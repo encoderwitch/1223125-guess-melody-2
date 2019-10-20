@@ -1,26 +1,30 @@
 import React from 'react';
-import OpenScreen from './components/OpenScreen';
 import PropTypes from 'prop-types';
 
-const App = (props) => {
-  const {gameTime, errorCount} = props;
+const OpenScreen = (props) => {
+  const {time, errorCount} = props;
 
   return (
-    <OpenScreen
-      time = {gameTime}
-      errorCount = {errorCount}
-    />
+    <div>
+      <h2>Rules of game</h2>
+      <p>The rules are simple:</p>
+      <ul>
+        <li>Time for all questions {time} min. </li>
+        <li>You can make {errorCount} errors.</li>
+      </ul>
+      <p>Good luck!</p>
+    </div>
   );
 };
 
-App.defaultProps = {
-  gameTime: 0,
+OpenScreen.defaultProps = {
+  time: 0,
   errorCount: 0,
 };
 
-App.propTypes = {
-  gameTime: PropTypes.number,
+OpenScreen.propTypes = {
+  time: PropTypes.number,
   errorCount: PropTypes.number,
 };
 
-export default App;
+export default OpenScreen;
