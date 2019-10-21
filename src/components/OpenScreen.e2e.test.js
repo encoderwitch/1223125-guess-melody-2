@@ -9,8 +9,8 @@ it(`renders correctly`, () => {
   const handleClick = jest.fn();
   const openScreen = shallow(<OpenScreen
     time = {0}
-    mistakes ={0}
-    onClick = {handleClick} />);
+    errorCount ={0}
+    HandleClick = {handleClick} />);
 
   const startButton = openScreen.find(`button`);
   startButton.simulate(`click`);
