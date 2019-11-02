@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 const App = (props) => {
   const {gameTimeApp, errorCountApp} = props;
 
-  function ClickOnButton() {
+  function HandleClickOnButton() {
   }
 
   return (
     <OpenScreen
       time = {gameTimeApp}
       errorCount = {errorCountApp}
-      HandleClick = {ClickOnButton}
+      HandleClick = {HandleClickOnButton}
     />
   );
 };
