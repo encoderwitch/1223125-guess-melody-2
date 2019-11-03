@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const OpenScreen = (props) => {
-  const {time, errorCount} = props;
+  const {time, errorCount, HandleClick} = props;
 
   return (
     <div>
@@ -13,6 +13,7 @@ const OpenScreen = (props) => {
         <li>You can make {errorCount} errors.</li>
       </ul>
       <p>Good luck!</p>
+      <button onClick={HandleClick}>Start of game</button>
     </div>
   );
 };
@@ -25,6 +26,7 @@ OpenScreen.defaultProps = {
 OpenScreen.propTypes = {
   time: PropTypes.number,
   errorCount: PropTypes.number,
+  HandleClick: PropTypes.func,
 };
 
 export default OpenScreen;
