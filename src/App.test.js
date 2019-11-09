@@ -7,6 +7,7 @@ it(`renders correctly`, () => {
       .create(<App
         time = {0}
         mistakes ={0}
+        questions={[]}
       />)
       .toJSON();
   expect(tree).toMatchSnapshot();
